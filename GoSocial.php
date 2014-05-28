@@ -5,8 +5,8 @@
  * A foundation off of which to build well-documented WordPress plugins that
  * also follow WordPress Coding Standards and PHP best practices.
  *
- * @package   Plugin_Name
- * @author    Your Name <email@example.com>
+ * @package   GoSocial
+ * @author    Ser Qi <serqi.93@gmail.com>
  * @license   GPL-2.0+
  * @link      http://example.com
  * @copyright 2014 Your Name or Company Name
