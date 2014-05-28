@@ -12,11 +12,11 @@
  * @copyright 2014 Your Name or Company Name
  *
  * @wordpress-plugin
- * Plugin Name:       @TODO
+ * Plugin Name:       Go Social
  * Plugin URI:        @TODO
- * Description:       @TODO
+ * Description:        “Go Social” is a feature that will allow event organizers to enter social data about their events via the WordPress administration dashboard.
  * Version:           1.0.0
- * Author:            @TODO
+ * Author:            Qi Ser
  * Author URI:        @TODO
  * Text Domain:       plugin-name-locale
  * License:           GPL-2.0+
@@ -41,7 +41,7 @@ if ( ! defined( 'WPINC' ) ) {
  * - replace `class-plugin-name.php` with the name of the plugin's class file
  *
  */
-require_once( plugin_dir_path( __FILE__ ) . 'public/class-plugin-name.php' );
+require_once( plugin_dir_path( __FILE__ ) . 'public/class-GoSocial.php' );
 
 /*
  * Register hooks that are fired when the plugin is activated or deactivated.
@@ -52,8 +52,8 @@ require_once( plugin_dir_path( __FILE__ ) . 'public/class-plugin-name.php' );
  * - replace Plugin_Name with the name of the class defined in
  *   `class-plugin-name.php`
  */
-register_activation_hook( __FILE__, array( 'Plugin_Name', 'activate' ) );
-register_deactivation_hook( __FILE__, array( 'Plugin_Name', 'deactivate' ) );
+register_activation_hook( __FILE__, array( 'GoSocial', 'activate' ) );
+register_deactivation_hook( __FILE__, array( 'GoSocial', 'deactivate' ) );
 
 /*
  * @TODO:
@@ -61,7 +61,7 @@ register_deactivation_hook( __FILE__, array( 'Plugin_Name', 'deactivate' ) );
  * - replace Plugin_Name with the name of the class defined in
  *   `class-plugin-name.php`
  */
-add_action( 'plugins_loaded', array( 'Plugin_Name', 'get_instance' ) );
+add_action( 'plugins_loaded', array( 'GoSocial', 'get_instance' ) );
 
 /*----------------------------------------------------------------------------*
  * Dashboard and Administrative Functionality
@@ -85,7 +85,7 @@ add_action( 'plugins_loaded', array( 'Plugin_Name', 'get_instance' ) );
  */
 if ( is_admin() && ( ! defined( 'DOING_AJAX' ) || ! DOING_AJAX ) ) {
 
-	require_once( plugin_dir_path( __FILE__ ) . 'admin/class-plugin-name-admin.php' );
-	add_action( 'plugins_loaded', array( 'Plugin_Name_Admin', 'get_instance' ) );
+	require_once( plugin_dir_path( __FILE__ ) . 'admin/class-GoSocial-admin.php' );
+	add_action( 'plugins_loaded', array( 'GoSocial_Admin', 'get_instance' ) );
 
 }
