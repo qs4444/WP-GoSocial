@@ -2,8 +2,8 @@
 /**
  * Plugin Name.
  *
- * @package   Plugin_Name
- * @author    Your Name <email@example.com>
+ * @package   GoSocial
+ * @author    Ser Qi <serqi.93@gmail.com>
  * @license   GPL-2.0+
  * @link      http://example.com
  * @copyright 2014 Your Name or Company Name
@@ -18,8 +18,8 @@
  *
  * @TODO: Rename this class to a proper name for your plugin.
  *
- * @package Plugin_Name
- * @author  Your Name <email@example.com>
+ * @package GoSocial
+ * @author  Ser Qi <serqi.93@gmail.com>
  */
 class GoSocial {
 
