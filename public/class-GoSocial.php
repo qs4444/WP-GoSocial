@@ -46,7 +46,7 @@ class GoSocial {
 	 *
 	 * @var      string
 	 */
-	protected $plugin_slug = 'plugin-name';
+	protected $plugin_slug = 'GoSocial';
 
 	/**
 	 * Instance of this class.
